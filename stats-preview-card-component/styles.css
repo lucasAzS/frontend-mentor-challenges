@@ -1,0 +1,132 @@
+body {
+  background: hsl(233, 47%, 7%);
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  margin: 200px auto;
+  max-width: 1120px;
+  max-height: 800px;
+  background: hsl(244, 38%, 16%);
+  border-radius: 0.5em;
+  display: flex;
+}
+.content {
+  padding: 65px 0px 60px 65px;
+  flex: 100%;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  max-width: 370px;
+}
+.title span {
+  color: hsl(277, 64%, 61%);
+}
+
+.text {
+  color: hsla(0, 0%, 100%, 0.65);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  max-width: 350px;
+  line-height: 1.6;
+}
+
+.card-stats {
+  display: flex;
+}
+
+.card-stats {
+  font-family: 'Lexend Deca', sans-serif;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+.card-stats div {
+  width: 100%;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.card-stats p {
+  color: hsl(0, 0%, 100%);
+  /* font-weight: 600; */
+  margin: 5px 0;
+  font-size: 1.5rem;
+}
+.card-stats span {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.img-container {
+  flex: 100%;
+  background: url(./images/image-header-desktop.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+.layer {
+  background-color: hsla(277, 94%, 35%, 0.445);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.first {
+  text-transform: none;
+}
+
+@media (max-width: 1119px) {
+  .card {
+    flex-direction: column;
+    max-width: 375px;
+    max-height: 900px;
+    align-items: center;
+    text-align: center;
+  }
+  .content {
+    padding: 0;
+  }
+
+  .title {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 60px;
+    margin-bottom: 25px;
+  }
+
+  .text {
+    max-width: 270px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .card-stats {
+    flex-direction: column;
+  }
+  .card-stats div {
+    margin-bottom: 30px;
+  }
+  .img-container {
+    background: url(./images/image-header-mobile.jpg) no-repeat;
+    min-height: 275px;
+    background-size: contain;
+    order: -1;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.5em;
+  }
+}
