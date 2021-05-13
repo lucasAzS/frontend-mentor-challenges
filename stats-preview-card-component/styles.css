@@ -5,15 +5,15 @@ body {
 .back {
   background: transparent;
   border: none;
-}
-.back a:hover {
-  background: hsl(244, 38%, 16%);
-}
-.back a {
   color: #eee;
   text-decoration: none;
   padding: 10px;
 }
+
+.back:hover {
+  background: hsl(244, 38%, 16%);
+}
+
 .card {
   width: 100%;
   margin: 200px auto;
